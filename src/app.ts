@@ -12,7 +12,7 @@ export function build() {
   // 2. POST que recibe y retorna un body dinámico
   app.post('/echo', async (request, reply) => {
     const body = request.body;
-    return { received: body };
+    return reply.status(200).send({ received: body });
   });
 
   // 3. PUT que recibe un parámetro en la URL
