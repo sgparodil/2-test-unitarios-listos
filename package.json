@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "dev": "ts-node src/server.ts",
     "start": "tsx src/main.ts",
     "test": "vitest"
   },

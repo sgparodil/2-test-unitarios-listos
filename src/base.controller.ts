@@ -1,6 +1,6 @@
-import { FastifyReply, FastifyRequest } from 'fastify';
+// src/base.controller.ts
+import { FastifyRequest, FastifyReply } from 'fastify';
 
-// Este handler maneja el endpoint GET /
-export const helloWorldApi = async (request: FastifyRequest, reply: FastifyReply) => {
+export async function helloWorldApi(request: FastifyRequest, reply: FastifyReply) {
   return 'Hello, World!';
-};
+}
